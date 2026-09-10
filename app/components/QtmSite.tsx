@@ -569,12 +569,13 @@ function PolyurethaneOpenEndPage(){
   },[]);
 
   return <>
-    <section className="openend-hero">
+    <section className="openend-hero openend-hero--brand-split">
       <div className="openend-hero-copy">
-        <Breadcrumbs parts={[{label:"Products",href:"/products"},{label:"Timing Belts",href:"/products/timing-belts"},{label:"Polyurethane Open End"}]}/>
+        <Breadcrumbs plain parts={[{label:"Products",href:"/products"},{label:"Timing Belts",href:"/products/timing-belts"},{label:"Polyurethane Open End"}]}/>
         <p className="eyebrow"><b>MEGADYNE · MEGALINEAR</b></p>
         <h1>Polyurethane<br/>Open End Belts</h1>
-        <p>Precision open-length timing belts for linear motion, positioning and synchronous conveying—configured around the machine and application.</p>
+        <figure className="openend-mobile-hero-media"><img src={megalinearImages.hero} alt="Megadyne MEGALINEAR polyurethane open-ended timing belt"/></figure>
+        <div className="openend-hero-description"><p>Precision open-length timing belts for linear motion, positioning and synchronous conveying—configured around the machine and application.</p></div>
         <div className="button-row"><a className="hero-quote-link" href="/request-a-quote?product=polyurethane-open-end">Request a Quote <Arrow/></a><a className="text-link light" href="https://megadynegroup.com/en/products/timing-belts/polyurethane-open-end/megalinear/" target="_blank" rel="noreferrer">Official MEGALINEAR page <Arrow/></a></div>
       </div>
       <figure className="openend-hero-media"><img src={megalinearImages.hero} alt="Megadyne MEGALINEAR polyurethane open-ended timing belt"/></figure>
