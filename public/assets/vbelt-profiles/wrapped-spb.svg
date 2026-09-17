@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Wrapped V-belt profile SPB</title>
+  <desc id="desc">Narrow wrapped V-belt section SPB, 17 mm top width and 14 mm height.</desc>
+  <rect width="420" height="260" fill="#f4f3f0"/>
+  <path d="M125 44h170l-42 160h-86z" fill="#1f1f1f"/>
+  <path d="M125 44h170l-42 160h-86z" fill="none" stroke="#515151" stroke-width="11" stroke-linejoin="round"/>
+  <path d="M154 80h112" stroke="#777" stroke-width="6" stroke-linecap="round"/>
+  <text x="210" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#101010">SPB</text>
+  <text x="210" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#666">17 x 14 mm</text>
+</svg>

@@ -1,5 +1,10 @@
+import { Suspense } from "react";
 import QtmSite from "./components/QtmSite";
 
 export default function Home() {
-  return <QtmSite />;
+  return (
+    <Suspense fallback={null}>
+      <QtmSite />
+    </Suspense>
+  );
 }
