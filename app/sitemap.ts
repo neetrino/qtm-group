@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { industries, news, products, suppliers } from "./data";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://qtm-group.com";
   const staticRoutes = ["", "/about-us", "/products", "/industries", "/suppliers", "/our-network", "/b2b", "/contact-us", "/news", "/request-a-quote", "/product-identification", "/search", "/privacy-policy", "/cookie-policy", "/terms"];

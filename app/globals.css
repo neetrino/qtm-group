@@ -1563,10 +1563,10 @@
   grid-row:1;
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  grid-template-rows:repeat(3,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));
   gap:5px;
   width:100%;
-  aspect-ratio:1;
+  aspect-ratio:3/2;
   overflow:hidden;
   background:#fff;
 }
@@ -1578,10 +1578,6 @@
   overflow:hidden;
   background:#171716;
 }
-.about-industries-overview{
-  grid-column:span 2;
-  grid-row:span 2;
-}
 .about-industries-tile img{
   display:block;
   width:100%;
@@ -1589,7 +1585,6 @@
   object-fit:cover;
   transition:transform .6s cubic-bezier(.22,1,.36,1),filter .3s ease;
 }
-.about-industries-overview img{object-fit:contain}
 .about-industries-tile:after{
   content:"";
   position:absolute;
@@ -1603,6 +1598,49 @@
 }
 .about-industries-copy h3{margin-bottom:22px}
 .about-industries-copy>p:not(.eyebrow){font-size:15px;line-height:1.65}
+.about-support-gallery{
+  grid-column:1;
+  grid-row:1;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-auto-rows:minmax(110px,1fr);
+  gap:5px;
+  width:100%;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:#fff;
+}
+.about-support-tile{
+  position:relative;
+  min-width:0;
+  min-height:0;
+  margin:0;
+  overflow:hidden;
+  background:#171716;
+}
+.about-support-tile:first-child{
+  grid-column:span 2;
+  grid-row:span 2;
+}
+.about-support-tile img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform .6s cubic-bezier(.22,1,.36,1),filter .3s ease;
+}
+.about-support-tile:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:1px solid rgba(255,255,255,.24);
+  pointer-events:none;
+}
+.about-support-tile:hover img{
+  transform:scale(1.04);
+  filter:saturate(1.04);
+}
 .about-industry-list{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -1700,10 +1738,6 @@
     margin-inline:auto;
     gap:4px;
   }
-  .about-industries-overview{
-    grid-column:auto;
-    grid-row:auto;
-  }
   .about-industries-copy>p:not(.eyebrow){font-size:15px;line-height:1.65}
   .about-support-feature{
     display:grid;
@@ -1719,20 +1753,19 @@
     min-width:0;
     padding:0;
   }
-  .about-support-feature .about-story-image{
+  .about-support-gallery{
     grid-column:1;
     grid-row:2;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-auto-rows:minmax(130px,1fr);
     width:100%;
-    height:auto;
-    min-height:0;
-    aspect-ratio:3/2;
+    aspect-ratio:auto;
     margin:0;
+    gap:4px;
   }
-  .about-support-feature .about-story-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
+  .about-support-tile:first-child{
+    grid-column:span 2;
+    grid-row:span 1;
   }
 }
 @media(max-width:560px){
@@ -2132,9 +2165,33 @@
 .openend-profile-picture-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .openend-profile-picture-grid figure{position:relative;min-width:0;margin:0;border:1px solid #dbdad6;background:var(--warm);overflow:hidden;transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease}
 .openend-profile-picture-grid figure:hover{transform:translateY(-4px);border-color:#b4b4af;box-shadow:0 16px 34px rgba(18,18,18,.09)}
-.openend-profile-picture-grid img{display:block;width:100%;height:220px;padding:24px;background:#fff;object-fit:contain;transition:transform .3s ease}
+.openend-profile-picture-grid img{display:block;width:100%;height:220px;padding:18px;background:#fff;object-fit:contain;transition:transform .3s ease}
 .openend-profile-picture-grid figure:hover img{transform:scale(1.04)}
 .openend-profile-picture-grid figcaption{display:flex;align-items:center;min-height:66px;padding:17px 19px;border-top:1px solid #dbdad6;font:700 18px/1.1 var(--heading);letter-spacing:-.015em}
+.openend-profile-picture-grid--merged{align-items:stretch}
+.merged-profile-card{display:flex;flex-direction:column}
+.merged-profile-card img{order:2}
+.merged-profile-card figcaption{order:3;font-size:15px;line-height:1.25}
+.conti-technical-preview{background:var(--charcoal);color:#fff}
+.conti-technical-preview .openend-section-head .eyebrow b,
+.conti-technical-preview .internal-structure-label{color:#fca931}
+.conti-technical-preview .openend-component-list article span{background:#fca931;color:#16120b}
+.conti-technical-preview .openend-component-list article{border-color:#444}
+.conti-technical-preview .openend-technical-grid figure{background:#f4f3f0}
+.conti-technical-preview .openend-technical-grid figure img{width:auto;max-width:100%;max-height:360px;object-fit:contain}
+.vbelt-section-header{grid-column:1/-1;position:relative;margin:18px 0 4px;padding:34px 38px;border:1px solid #262626;background:linear-gradient(135deg,#151515,#2a2a2a);color:#fff;overflow:hidden}
+.vbelt-section-header:before{content:"";position:absolute;inset:0 auto 0 0;width:7px;background:var(--red)}
+.vbelt-section-header:after{content:"";position:absolute;inset:auto -10% -55% 42%;height:160%;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 58%);pointer-events:none}
+.vbelt-section-header span{display:block;position:relative;z-index:1;margin-bottom:12px;color:#f4f4ef;font:700 10px var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.vbelt-section-header h3{position:relative;z-index:1;margin:0 0 10px;font:800 clamp(38px,7vw,84px)/.88 var(--heading);letter-spacing:-.06em}
+.vbelt-section-header p{position:relative;z-index:1;max-width:760px;margin:0;color:#d9d9d4;font-size:16px;line-height:1.65}
+.vbelt-section-header--conti{border-color:#fca931;background:linear-gradient(135deg,#111 0%,#1e1e1e 58%,#2a2417 100%);color:#fff}
+.vbelt-section-header--conti:before{background:#fca931}
+.vbelt-section-header--conti:after{inset:-38% -12% auto auto;width:46%;height:180%;background:radial-gradient(circle,rgba(252,169,49,.36),rgba(252,169,49,.14) 34%,transparent 66%)}
+.vbelt-section-header--conti span{color:#fca931}
+.vbelt-section-header--conti p{color:#ece7dc}
+.vbelt-new-badge{display:inline-flex;align-items:center;margin-left:auto;padding:8px 12px;border-radius:999px;background:#fca931;color:#16120b;font:800 10px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.vbelt-new-product-link{border-color:#fca931;box-shadow:0 18px 45px rgba(252,169,49,.18)}
 .openend-profile-official{width:100%;min-height:168px;display:grid;grid-template-columns:1fr auto;align-items:start;gap:18px;margin-bottom:18px;padding:30px;border:1px solid var(--medium);background:#fff;color:var(--black);transition:background .2s ease,color .2s ease}
 .openend-profile-official--media{grid-template-columns:minmax(190px,30%) minmax(0,1fr) auto;padding:0;align-items:stretch;overflow:hidden}
 .openend-profile-official--image-right{grid-template-columns:minmax(0,1fr) auto minmax(190px,30%)}
@@ -2161,8 +2218,8 @@
 .vbelt-megav-heading p{position:relative;z-index:1;max-width:720px;margin:0;color:#deded9;font-size:16px;line-height:1.55}
 .vbelt-conti-heading{background:linear-gradient(135deg,#111 0%,#252525 58%,#fca931 100%)}
 .vbelt-conti-heading:after{content:"CONTI";letter-spacing:-.06em}
-.vbelt-new-badge{display:inline-flex;align-items:center;padding:7px 10px;background:var(--red);color:#fff;font:800 10px var(--mono);letter-spacing:.08em;text-transform:uppercase}
-.vbelt-new-product-link{border-color:rgba(232,30,35,.55);box-shadow:0 18px 44px rgba(232,30,35,.08)}
+.vbelt-new-badge{display:inline-flex;align-items:center;padding:7px 10px;background:#fca931;color:#16120b;font:800 10px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.vbelt-new-product-link{border-color:rgba(252,169,49,.7);box-shadow:0 18px 44px rgba(252,169,49,.12)}
 .continental-family-description{max-width:760px;margin:-2px 0 20px;color:var(--text);font-size:16px}
 .continental-profile-note{display:grid;grid-template-columns:minmax(250px,.75fr) minmax(0,1.25fr);margin-top:28px;border:1px solid var(--medium);background:#fff}
 .continental-profile-note figure{min-width:0;margin:0;background:#fff;border-right:1px solid var(--medium);overflow:hidden}
@@ -2598,14 +2655,14 @@ html{scroll-behavior:smooth;overflow-x:hidden}
 .feature-sublist li{color:#aaa;padding-left:20px;font-size:13.5px;font-style:italic;line-height:1.5;position:relative}
 .feature-sublist li:before{content:"›";color:var(--red);font-size:15px;font-style:normal;position:absolute;top:-2px;left:0}
 @media (width<=1000px){.feature-columns{grid-template-columns:1fr;gap:36px;margin-top:44px;padding-top:36px}}
-.mechanism-showcase{background:#0c1119;margin:56px 0 0;position:relative;overflow:hidden}
-.mechanism-showcase img{object-fit:contain;object-position:center;filter:saturate(1.05);width:100%;height:clamp(300px,38vw,520px);display:block}
-.mechanism-showcase:after{content:"";pointer-events:none;background:linear-gradient(#0000 20%,#080a0e0d 38%,#080a0e8c 68%,#080a0ef0 100%),linear-gradient(90deg,#0c1119 0%,#0c111900 9%),linear-gradient(270deg,#0c1119 0%,#0c111900 9%);position:absolute;inset:0}
-.mechanism-showcase figcaption{z-index:2;padding:20px 40px 30px;position:absolute;bottom:0;left:0;right:0}
+.mechanism-showcase{background:#0c1119;margin:56px auto 0;overflow:hidden;max-width:940px;border:1px solid rgba(12,17,25,.12);box-shadow:0 24px 70px rgba(12,17,25,.14)}
+.mechanism-showcase img{object-fit:contain;object-position:center;filter:saturate(1.05);width:100%;max-height:460px;height:auto;display:block;background:#eef0f2}
+.mechanism-showcase:after{display:none}
+.mechanism-showcase figcaption{padding:30px 40px 34px;background:#0c1119;border-top:1px solid rgba(255,255,255,.1)}
 .mechanism-showcase figcaption .eyebrow{margin-bottom:10px}
 .mechanism-showcase figcaption h3{color:#fff;font:800 clamp(22px,2.6vw,32px)/1.15 var(--heading);letter-spacing:-.01em;margin:0 0 10px}
 .mechanism-showcase figcaption p:last-child{color:#d4d4d0;max-width:640px;margin:0;font-size:14.5px;line-height:1.6}
-@media (width<=1000px){.mechanism-showcase{margin-top:44px}.mechanism-showcase img{height:auto;aspect-ratio:16/9;object-fit:cover}.mechanism-showcase:after{display:none}.mechanism-showcase figcaption{position:static;padding:26px 22px 30px;background:#0c1119}.mechanism-showcase figcaption .eyebrow{color:#e8e8e5}}
+@media (width<=1000px){.mechanism-showcase{margin-top:44px;max-width:100%}.mechanism-showcase img{max-height:none;height:auto;aspect-ratio:auto;object-fit:contain}.mechanism-showcase figcaption{padding:26px 22px 30px}.mechanism-showcase figcaption .eyebrow{color:#e8e8e5}}
 .internal-structure-list article>span{align-self:center}
 .openend-technical-grid--compact{border-top:0;align-items:stretch}
 .openend-technical-grid--compact figure{min-height:0;padding:36px}
