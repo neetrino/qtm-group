@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Wrapped V-belt profile SPC</title>
+  <desc id="desc">Narrow wrapped V-belt section SPC, 22 mm top width and 18 mm height.</desc>
+  <rect width="420" height="260" fill="#f4f3f0"/>
+  <path d="M100 36h220l-55 178H155z" fill="#1f1f1f"/>
+  <path d="M100 36h220l-55 178H155z" fill="none" stroke="#515151" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M138 76h144" stroke="#777" stroke-width="7" stroke-linecap="round"/>
+  <text x="210" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#101010">SPC</text>
+  <text x="210" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#666">22 x 18 mm</text>
+</svg>

@@ -2800,6 +2800,25 @@ html{scroll-behavior:smooth;overflow-x:hidden}
     grid-template-columns:1fr!important;
   }
 }
+
+/* Equalize About page photo cards with a controlled vertical crop. */
+.about-story-section .about-industries-tile,
+.about-story-section .about-support-tile,
+.about-story-section .about-support-tile:first-child,
+.about-story-section .about-support-tile:nth-child(6),
+.about-story-section .about-support-tile:nth-child(7),
+.about-story-section .about-support-tile:nth-child(-n+3),
+.about-story-section .about-support-tile:nth-child(n+4){
+  aspect-ratio:3/2!important;
+  overflow:hidden!important;
+}
+.about-story-section .about-industries-tile img,
+.about-story-section .about-support-tile img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+}
 .timing-overview-dark{background:var(--charcoal);color:#fff;padding:clamp(78px,8vw,112px) 0}
 .timing-overview-dark-grid{grid-template-columns:minmax(0,.95fr) minmax(320px,1.05fr);align-items:start;gap:clamp(34px,5vw,72px);display:grid}
 .timing-overview-dark h2{font:750 clamp(40px,5vw,70px)/.95 var(--heading);letter-spacing:-.052em;margin:12px 0 18px}
