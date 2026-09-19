@@ -2201,13 +2201,13 @@
 .vbelt-section-header span{display:block;position:relative;z-index:1;margin-bottom:12px;color:#f4f4ef;font:700 10px var(--mono);letter-spacing:.16em;text-transform:uppercase}
 .vbelt-section-header h3{position:relative;z-index:1;margin:0 0 10px;font:800 clamp(38px,7vw,84px)/.88 var(--heading);letter-spacing:-.06em}
 .vbelt-section-header p{position:relative;z-index:1;max-width:760px;margin:0;color:#d9d9d4;font-size:16px;line-height:1.65}
-.vbelt-section-header--conti{border-color:#fca931;background:linear-gradient(135deg,#111 0%,#1e1e1e 58%,#2a2417 100%);color:#fff}
-.vbelt-section-header--conti:before{background:#fca931}
-.vbelt-section-header--conti:after{inset:-38% -12% auto auto;width:46%;height:180%;background:radial-gradient(circle,rgba(252,169,49,.36),rgba(252,169,49,.14) 34%,transparent 66%)}
-.vbelt-section-header--conti span{color:#fca931}
+.vbelt-section-header--conti{border-color:#E81E23;background:linear-gradient(135deg,#111 0%,#1e1e1e 58%,#2a2417 100%);color:#fff}
+.vbelt-section-header--conti:before{background:#E81E23}
+.vbelt-section-header--conti:after{inset:-38% -12% auto auto;width:46%;height:180%;background:radial-gradient(circle,rgba(232,30,35,.36),rgba(232,30,35,.14) 34%,transparent 66%)}
+.vbelt-section-header--conti span{color:#E81E23}
 .vbelt-section-header--conti p{color:#ece7dc}
-.vbelt-new-badge{display:inline-flex;align-items:center;margin-left:auto;padding:8px 12px;border-radius:999px;background:#fca931;color:#16120b;font:800 10px var(--mono);letter-spacing:.12em;text-transform:uppercase}
-.vbelt-new-product-link{border-color:#fca931;box-shadow:0 18px 45px rgba(252,169,49,.18)}
+.vbelt-new-badge{display:inline-flex;align-items:center;margin-left:auto;padding:8px 12px;border-radius:999px;background:#E81E23;color:#fff;font:800 10px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.vbelt-new-product-link{border-color:#E81E23;box-shadow:0 18px 45px rgba(232,30,35,.18)}
 .openend-profile-official{width:100%;min-height:168px;display:grid;grid-template-columns:1fr auto;align-items:start;gap:18px;margin-bottom:18px;padding:30px;border:1px solid var(--medium);background:#fff;color:var(--black);transition:background .2s ease,color .2s ease}
 .openend-profile-official--media{grid-template-columns:minmax(190px,30%) minmax(0,1fr) auto;padding:0;align-items:stretch;overflow:hidden}
 .openend-profile-official--image-right{grid-template-columns:minmax(0,1fr) auto minmax(190px,30%)}
@@ -2232,10 +2232,10 @@
 .vbelt-megav-heading span{position:relative;z-index:1;color:#fff;font:750 10px var(--mono);letter-spacing:.12em;text-transform:uppercase}
 .vbelt-megav-heading h3{position:relative;z-index:1;margin:12px 0 8px;font:850 clamp(42px,5vw,76px)/.9 var(--heading);letter-spacing:-.06em}
 .vbelt-megav-heading p{position:relative;z-index:1;max-width:720px;margin:0;color:#deded9;font-size:16px;line-height:1.55}
-.vbelt-conti-heading{background:linear-gradient(135deg,#111 0%,#252525 58%,#fca931 100%)}
+.vbelt-conti-heading{background:linear-gradient(135deg,#111 0%,#252525 58%,#E81E23 100%)}
 .vbelt-conti-heading:after{content:"CONTI";letter-spacing:-.06em}
-.vbelt-new-badge{display:inline-flex;align-items:center;padding:7px 10px;background:#fca931;color:#16120b;font:800 10px var(--mono);letter-spacing:.08em;text-transform:uppercase}
-.vbelt-new-product-link{border-color:rgba(252,169,49,.7);box-shadow:0 18px 44px rgba(252,169,49,.12)}
+.vbelt-new-badge{display:inline-flex;align-items:center;padding:7px 10px;background:#E81E23;color:#fff;font:800 10px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.vbelt-new-product-link{border-color:rgba(232,30,35,.7);box-shadow:0 18px 44px rgba(232,30,35,.12)}
 .continental-family-description{max-width:760px;margin:-2px 0 20px;color:var(--text);font-size:16px}
 .continental-profile-note{display:grid;grid-template-columns:minmax(250px,.75fr) minmax(0,1.25fr);margin-top:28px;border:1px solid var(--medium);background:#fff}
 .continental-profile-note figure{min-width:0;margin:0;background:#fff;border-right:1px solid var(--medium);overflow:hidden}
