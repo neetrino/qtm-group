@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Wrapped V-belt profile D</title>
+  <desc id="desc">Classical wrapped V-belt section D, 32 mm top width and 19 mm height.</desc>
+  <rect width="420" height="260" fill="#f4f3f0"/>
+  <path d="M64 38h292l-58 174H122z" fill="#1f1f1f"/>
+  <path d="M64 38h292l-58 174H122z" fill="none" stroke="#515151" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M116 76h188" stroke="#777" stroke-width="8" stroke-linecap="round"/>
+  <text x="210" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#101010">D</text>
+  <text x="210" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#666">32 x 19 mm</text>
+</svg>

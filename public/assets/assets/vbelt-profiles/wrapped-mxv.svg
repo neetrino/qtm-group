@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Wrapped variable-speed V-belt profile MXV</title>
+  <desc id="desc">Wrapped variable-speed V-belt profile MXV.</desc>
+  <rect width="420" height="260" fill="#f4f3f0"/>
+  <path d="M54 34h312l-74 184H128z" fill="#1f1f1f"/>
+  <path d="M54 34h312l-74 184H128z" fill="none" stroke="#515151" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M112 74h196" stroke="#777" stroke-width="8" stroke-linecap="round"/>
+  <text x="210" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#101010">MXV</text>
+  <text x="210" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#666">Wide variable-speed section</text>
+</svg>
