@@ -2007,6 +2007,18 @@
   width:7px;
   height:100%;
 }
+.cascade-category{
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  padding:7px 11px;
+  color:#999;
+  font-weight:600;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  line-height:1.25;
+}
 .cascade-all-products{
   margin-top:5px;
   border-top:1px solid #e1e0dc;
@@ -2053,6 +2065,16 @@
     line-height:1.25;
   }
   .mobile-accordion .mobile-product-children>a:last-child{border-bottom:0}
+  .mobile-category-label{
+    min-height:40px;
+    padding:8px 12px;
+    color:#999;
+    font-weight:600;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    line-height:1.25;
+  }
   .mobile-product-subfamily{border:0}
   .mobile-product-subfamily summary{min-height:44px;padding-left:12px;font-size:12px}
   .mobile-product-subfamily .mobile-product-children{margin-left:8px;padding-left:12px}
