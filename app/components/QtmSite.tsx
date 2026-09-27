@@ -193,9 +193,7 @@ function Header({ path, language, onLanguageChange }: { path: string; language: 
                             <a href={`/products?category=${slugify(familyItem.name)}`}>{familyItem.name}<CascadeChevron /></a>
                             <ul className="cascade-level cascade-submenu">
                               {familyItem.name === "Power Transmission Belts" ? <>
-                                <li><a href="/products?category=timing-belts">Timing Belts</a></li>
                                 {timingBeltTypes.map((item) => <li key={item}><a href={`/products/timing-belts/${slugify(item)}`}>{item}</a></li>)}
-                                <li><a href="/products?category=v-belts">V-Belts</a></li>
                                 {vBeltFamilies.map((item) => <li key={item.name}><a href={item.href}>{item.name}</a></li>)}
                                 <li><a href="/products?category=specialty-belts">Specialty Belts</a></li>
                               </> : familyItem.items.map((item) => {
@@ -227,18 +225,8 @@ function Header({ path, language, onLanguageChange }: { path: string; language: 
               <div className="mobile-product-children">
                 {familyItem.name !== "Power Transmission Belts" && <a className="mobile-view-all" href={`/products?category=${slugify(familyItem.name)}`}>View all {familyItem.name}</a>}
                 {familyItem.name === "Power Transmission Belts" ? <>
-                  <details className="mobile-product-family mobile-product-subfamily">
-                    <summary>Timing Belts<CascadeChevron/></summary>
-                    <div className="mobile-product-children">
-                      {timingBeltTypes.map((item) => <a key={item} href={`/products/timing-belts/${slugify(item)}`}>{item}</a>)}
-                    </div>
-                  </details>
-                  <details className="mobile-product-family mobile-product-subfamily">
-                    <summary>V-Belts<CascadeChevron/></summary>
-                    <div className="mobile-product-children">
-                      {vBeltFamilies.map((item) => <a key={item.name} href={item.href}>{item.name}</a>)}
-                    </div>
-                  </details>
+                  {timingBeltTypes.map((item) => <a key={item} href={`/products/timing-belts/${slugify(item)}`}>{item}</a>)}
+                  {vBeltFamilies.map((item) => <a key={item.name} href={item.href}>{item.name}</a>)}
                   <a href="/products?category=specialty-belts">Specialty Belts</a>
                 </> : familyItem.items.map((item) => {
                   const linked = products.find((product) => product.name === item || product.name.replace(" & Components", "") === item);
