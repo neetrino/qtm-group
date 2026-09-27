@@ -2788,9 +2788,14 @@ html{scroll-behavior:smooth;overflow-x:hidden}
   grid-column:1!important;
   grid-row:1!important;
   width:100%!important;
-  max-width:820px!important;
-  margin-inline:auto!important;
   text-align:center!important;
+}
+.about-story-section .about-industries-copy .eyebrow,
+.about-story-section .about-industries-copy h3,
+.about-story-section .about-industries-copy>p{
+  max-width:820px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
 }
 .about-story-section .about-industries-copy .eyebrow{justify-content:center!important}
 .about-story-section .about-industries-link{justify-content:center!important}
