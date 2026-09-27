@@ -1491,7 +1491,7 @@
 
 /* About Us editorial system: open, image-led, and aligned with the Home page. */
 .about-story-section{
-  padding:clamp(84px,8vw,126px) 0 clamp(96px,10vw,152px);
+  padding:clamp(56px,5.5vw,86px) 0 clamp(96px,10vw,152px);
   background:var(--warm);
 }
 .about-story-section:before{
@@ -1505,6 +1505,7 @@
   text-align:center;
 }
 .about-story-masthead .about-story-title{margin:0}
+.about-story-masthead{margin-bottom:-32px}
 .about-story-feature,
 .about-story-feature-reverse{
   min-height:500px;
