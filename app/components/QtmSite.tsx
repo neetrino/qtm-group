@@ -1156,12 +1156,10 @@ export default function QtmSite({segments=[]}:{segments?:string[]}){
   if(path==="/")page=<HomePage/>;
   else if(path==="/about-us")page=<AboutPage/>;
   else if(path==="/products")page=<ProductsPage/>;
-  else if(path==="/products/timing-belts")page=<TimingBeltsPage/>;
   else if(path==="/products/timing-belts/polyurethane-open-end")page=<PolyurethaneOpenEndPage/>;
   else if(path==="/products/timing-belts/polyurethane-endless")page=<TimingBeltDetailPage slug="polyurethane-endless"/>;
   else if(path==="/products/timing-belts/rubber-open-end")page=<TimingBeltDetailPage slug="rubber-open-end"/>;
   else if(path==="/products/timing-belts/rubber-endless")page=<TimingBeltDetailPage slug="rubber-endless"/>;
-  else if(path==="/products/v-belts")page=<VBeltsPage/>;
   else if(path==="/products/v-belts/rubber-raw-edge")page=<VBeltDetailPage slug="rubber-raw-edge"/>;
   else if(path==="/products/v-belts/rubber-wrapped")page=<VBeltDetailPage slug="rubber-wrapped"/>;
   else if(path==="/products/v-belts/rubber-banded")page=<VBeltDetailPage slug="rubber-banded"/>;
