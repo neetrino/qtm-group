@@ -34,7 +34,7 @@ export const products: Product[] = [
     subcategories: ["Polyurethane Open End", "Polyurethane Endless", "Rubber Open End", "Rubber Endless"],
     profiles: ["HTD", "STD", "RPP", "SLV", "GLD", "TTM", "CXP", "CXA", "XL", "L", "H", "XH", "XXH", "T2.5", "T5", "T10", "T20", "AT3", "AT5", "AT10", "AT20", "R", "B", "ATP", "ATK", "ATG", "QST"],
     benefits: ["Precise synchronous transmission", "Custom coatings, cleats and guides", "Application-specific tension cords", "Product-selection support"],
-    image: "/assets/partnership-megadyne-pu-new.png",
+    image: "/assets/partnership-megadyne-pu-new.webp",
   },
   {
     slug: "v-belts",
@@ -47,7 +47,7 @@ export const products: Product[] = [
     subcategories: ["Rubber Raw Edge", "Rubber Wrapped", "Rubber Banded"],
     profiles: ["Z", "A", "B", "C", "D", "E", "SPZ", "SPA", "SPB", "SPC", "3V", "5V", "8V", "AA", "BB", "CC", "Variable-speed profiles", "Agricultural profiles"],
     benefits: ["Broad application coverage", "Oil- and heat-resistant options", "Antistatic options", "High-power configurations"],
-    image: "/assets/partnership-megadyne-vbelts-new.png",
+    image: "/assets/partnership-megadyne-vbelts-new.webp",
   },
   {
     slug: "conveyor-belts",
@@ -82,7 +82,7 @@ export const products: Product[] = [
     industries: ["Agriculture", "Mining", "Material Handling & Logistics", "Packaging"],
     materials: ["Steel", "Stainless steel"],
     subcategories: ["Roller Chains", "Conveyor Chains", "Attachment Chains", "Special Chains"],
-    image: "/assets/products/roller-chain.jpg",
+    image: "/assets/products/roller-chain.webp",
   },
   {
     slug: "sprockets",
@@ -93,7 +93,7 @@ export const products: Product[] = [
     industries: ["Agriculture", "Material Handling & Logistics", "Mining", "Oil & Gas"],
     materials: ["Steel", "Cast iron", "Engineering polymers"],
     subcategories: ["Chain Sprockets", "Timing Pulleys", "V-Belt Pulleys", "Bushes"],
-    image: "/assets/products/sprocket.jpg",
+    image: "/assets/products/sprocket.webp",
   },
   {
     slug: "bearings",
@@ -104,7 +104,7 @@ export const products: Product[] = [
     industries: ["Oil & Gas", "Mining", "Automotive & Tire", "Material Handling & Logistics"],
     materials: ["Steel", "Engineering polymers"],
     subcategories: ["Bearings", "Couplings", "Tensioners", "Bushes", "Metal Parts"],
-    image: "/assets/products/bearings.jpg",
+    image: "/assets/products/bearings.webp",
   },
 ];
 
