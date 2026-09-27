@@ -335,6 +335,7 @@ function AboutPage() {
         <article className="about-story-feature about-industries-feature" data-about-reveal>
           <div className="about-industries-gallery" aria-label="QTM Group industries and factory applications">
             {Array.from({length:6},(_,index)=><figure className="about-industries-tile" key={`about-gallery-${index+1}`}><img src={`/assets/about-uploaded/about-gallery-${String(index+1).padStart(2,"0")}.webp`} alt={`QTM Group industrial application ${index+1}`} /></figure>)}
+            {Array.from({length:6},(_,index)=><figure className="about-support-tile" key={`about-support-${index+1}`}><img src={`/assets/about-uploaded/about-support-${String(index+1).padStart(2,"0")}.webp`} alt={`QTM Group technical support visit ${index+1}`} /></figure>)}
           </div>
           <div className="about-story-copy about-industries-copy">
             <p className="eyebrow"><b>INDUSTRIES WE SERVE</b></p>
@@ -346,10 +347,8 @@ function AboutPage() {
           </div>
         </article>
         <article className="about-story-feature about-story-feature-reverse about-support-feature" data-about-reveal>
-          <div className="about-support-gallery" aria-label="QTM Group technical support and industrial visits">
-            {Array.from({length:7},(_,index)=><figure className="about-support-tile" key={`about-support-${index+1}`}><img src={`/assets/about-uploaded/about-support-${String(index+1).padStart(2,"0")}.webp`} alt={`QTM Group technical support visit ${index+1}`} /></figure>)}
-          </div>
-          <div className="about-story-copy"><p className="eyebrow"><b>HOW WE SUPPORT</b></p><h3>International quality, delivered with regional confidence.</h3><p>Our strength lies in combining international product quality with regional market expertise, dependable logistics, and professional technical support. We work closely with our customers to identify the right solutions, ensure timely delivery, reduce operational downtime, and support long-term business success.</p></div>
+          <div className="about-story-copy about-support-copy"><p className="eyebrow"><b>HOW WE SUPPORT</b></p><h3>International quality, delivered with regional confidence.</h3><p>Our strength lies in combining international product quality with regional market expertise, dependable logistics, and professional technical support. We work closely with our customers to identify the right solutions, ensure timely delivery, reduce operational downtime, and support long-term business success.</p></div>
+          <figure className="about-support-final-image"><img src="/assets/about-uploaded/about-support-07.webp" alt="QTM Group technical support team at an industrial facility" /></figure>
         </article>
         <article className="about-story-closing" data-about-reveal><div><p className="eyebrow"><b>RESPONSIVE SUPPORT</b></p><p>With a strong commitment to quality, reliability, and customer satisfaction, the QTM Group team provides responsive technical and commercial assistance 24/7.</p></div><Button href="/contact-us">Contact QTM</Button></article>
       </div>
