@@ -231,7 +231,7 @@ export default function MegaPartnerDrivePage() {
         />
         <image
           className="qtm-drive-static-image"
-          href="/assets/qtm-q-logo.png"
+          href="/assets/qtm-q-logo.webp"
           x="575"
           y="335"
           width="110"
